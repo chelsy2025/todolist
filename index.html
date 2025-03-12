@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>todo list</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="instructions">
+        <p>type in a task in the bubble, press + to add! <br> <br> once a task is added, you can: <br> 
+            1. double press the task to mark it as complete <br>
+            2. press the pencil icon to edit, then press the check icon to save changes <br>
+            3. press the trash icon to delete the task entirely
+        </p>
+    </div>
+    <div class="body">
+        <div class="container">
+            <div class="todo-header">
+                <h2>CHECKLIST</h2>
+            </div>
+
+            <div class="todo-body">
+                <input type="text" id="todoText" class="todo-input" placeholder="Add task here">
+                <img src="images/add.png" alt="+" id="AddUpdateClick" onclick="CreateToDoData()">
+            </div>
+            <h5 id="AlertMessage"></h5>
+            <ul id="list-items" class="list-items"></ul>
+        </div>
+    </div>  
+
+    <script type="text/javascript" src="scripts.js"></script>
+</body>
+</html>
